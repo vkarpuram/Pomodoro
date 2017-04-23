@@ -24,8 +24,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="home.html">Home</a></li>
-        <li class="active"><a href="#"><span class="sr-only">(current)</span>Task</a></li>
-        <li><a href="#">Activity</a></li>
+        <li class="active"><a href="task.html"><span class="sr-only">(current)</span>Task</a></li>
+        <li><a href="Activity.html">Activity</a></li>
         <li><a href="About.html">Settings</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -50,91 +50,34 @@
   				<span class="input-group-addon" id="basic-addon2">Task Description</span>
 			</div>
 			<hr>
-			<form class="date">		
+			<!-- <form class="date"> -->
 		      <div>
-		        <label for="bday">Due Date: </label>
-		        <select name="month">
-		          <option value="Month">Month</option>
-		          <option value="jan">January</option>
-		          <option value="fab">Febraury</option>
-		          <option value="marc">March</option>
-		          <option value="april">April</option>
-		          <option value="may">May</option>
-		          <option value="june">June</option>
-		          <option value="july">July</option>
-		          <option value="august">August</option>
-		          <option value="sept">September</option>
-		          <option value="oct">October</option>
-		          <option value="nov">November</option>
-		          <option value="dec">December</option>
-		      </select>
-
-		      <select name="day">
-		          <option value="day">Day</option>
-		          <option value="1">1</option>
-		          <option value="2">2</option>
-		          <option value="3">3</option>
-		          <option value="4">4</option>
-		          <option value="5">5</option>
-		          <option value="6">6</option>
-		          <option value="7">7</option>
-		          <option value="8">8</option>
-		          <option value="9">9</option>
-		          <option value="10">10</option>
-		          <option value="11">11</option>
-		          <option value="12">12</option>
-		          <option value="13">13</option>
-		          <option value="13">14</option>
-		          <option value="13">15</option>
-		          <option value="13">16</option>
-		          <option value="13">17</option>
-		          <option value="13">18</option>
-		          <option value="13">19</option>
-		          <option value="13">20</option>
-		          <option value="13">21</option>
-		          <option value="13">22</option>
-		          <option value="13">23</option>
-		          <option value="13">24</option>
-		          <option value="13">25</option>
-		          <option value="13">26</option>
-		          <option value="13">27</option>
-		          <option value="13">28</option>
-		          <option value="13">29</option>
-		          <option value="13">30</option>
-		          <option value="13">31</option>
-		      </select>
-
-		      <select name="year">
-		          <option value="year">Year</option>
-		          <option value="1990">2016</option>
-		          <option value="1991">2017</option>
-		          <option value="1992">2018</option>
-		          <option value="1993">2019</option>
-		          <option value="1994">2020</option>
-		          <option value="1995">2021</option>
-		      </select>
-			</form>
-			<label for="priority" class="prioritynum">Priority: </label>
-				<select name="priority">
-					<option value="1">Low Priority</option>
-					<option value="1">Medium Priority</option>
-					<option value="1">High Priority</option>
-					<option value="1">Urgent Priority</option>
-				</select>
+						<div class="input-group tname">
+			  				<input type="text" class="form-control" placeholder="Format: mm/dd/yyyy;  Example: 04/26/2017" aria-describedby="basic-addon2">
+			  				<span class="input-group-addon" id="basic-addon2">Due Date</span>
+						</div>
+						<hr>
+						<div class="input-group pnum">
+			  				<input type="text" class="form-control" placeholder="Enter either 1: low priority, 2: medium priority, or 3: high priority" aria-describedby="basic-addon2">
+			  				<span class="input-group-addon" id="basic-addon2">Priority</span>
+						</div>
 			<hr>
 			<div class="row">
-			<div class="col-lg-6">
-				<h4>Enter number of pomodoros for the task: </h4>
+				<div class="col-lg-12">
+					<div class="input-group pnum">
+							<input type="text" class="form-control" placeholder="(Each pomodoro is 25 minutes in length and one cycle has 4 pomodoros.)" aria-describedby="basic-addon2">
+							<span class="input-group-addon" id="basic-addon2">Enter number of pomodoros</span>
+					</div>
+				</div>
 			</div>
-			<div class="col-lg-6">
-				<input type="text" name="pomodoros" placeholder="" class="input1">
+			<hr>
+			<div class="createTask">
+				<button class="btn btn-default btn-md"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create</button>
 			</div>
-			</div>
-			<sup>(Each pomodoro is 25 minutes in length and one cycle has 4 pomodoros.)</sup>
  	</div>
  </div>
 
-<script
+		<script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>

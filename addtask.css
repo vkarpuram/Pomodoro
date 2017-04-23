@@ -43,3 +43,7 @@ hr {
 	padding-top: 0.8%;
 	padding-bottom: 0.8%;
 }
+
+.form-group {
+	padding-top: 15px;
+}
