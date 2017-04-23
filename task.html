@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="task.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Pomodoro</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="home.html">Home</a></li>
+        <li class="active"><a href="#"><span class="sr-only">(current)</span>Task</a></li>
+        <li><a href="#">Activity</a></li>
+        <li><a href="About.html">Settings</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+ </nav>
+
+
+
+<div class="container">
+	<div class=" row">
+		<div class="col-lg-4">
+			<div class="row">
+				<div class="col-lg-12">
+				<i class="fa fa-list-alt fa-5x" aria-hidden="true"></i>
+					<h3>Yeterday's ToDo List: </h3>
+						<div class="list-group yesterday">
+						  <a href="#" class="list-group-item active">
+						    <h4 class="list-group-item-heading">CS230</h4>
+						    <p class="list-group-item-text">Complete Binary bomb project.</p>
+						  </a>
+						  <a href="#" class="list-group-item active">
+						    <h4 class="list-group-item-heading">CS320</h4>
+						    <p class="list-group-item-text">Complete Software Design Document. Make UML and Architecture diagrams.</p>
+						  </a>
+						  <a href="#" class="list-group-item active">
+						    <h4 class="list-group-item-heading">CS240</h4>
+						    <p class="list-group-item-text">Complete Homework4. Finsih all the questions.</p>
+						  </a>
+						  <a href="#" class="list-group-item active">
+						    <h4 class="list-group-item-heading">Get oil changed for the car</h4>
+						    <p class="list-group-item-text">Bring car to jiff lube. Appointment at 3:40 pm.</p>
+						  </a>
+						</div>
+				</div>
+		 	</div>
+		 	<div class="row">
+				<div class="col-lg-12">
+					<h3>Tomorrow's ToDo List: </h3>
+						<div class="list-group tomorrow">
+						  <a href="#" class="list-group-item active">
+						    <h4 class="list-group-item-heading">CS230</h4>
+						    <p class="list-group-item-text">Complete Binary bomb project.</p>
+						  </a>
+						  <a href="#" class="list-group-item active">
+						    <h4 class="list-group-item-heading">CS320</h4>
+						    <p class="list-group-item-text">Complete Software Design Document. Make UML and Architecture diagrams.</p>
+						  </a>
+						  <a href="#" class="list-group-item active">
+						    <h4 class="list-group-item-heading">CS240</h4>
+						    <p class="list-group-item-text">Complete Homework4. Finsih all the questions.</p>
+						  </a>
+						  <a href="#" class="list-group-item active">
+						    <h4 class="list-group-item-heading">Get oil changed for the car</h4>
+						    <p class="list-group-item-text">Bring car to jiff lube. Appointment at 3:40 pm.</p>
+						  </a>
+						</div>
+				</div>
+		 	</div>
+	 	</div>
+	 	<div class="col-lg-8">
+	 		<i class="fa fa-list-alt fa-5x" aria-hidden="true"></i>
+				<h3>Today's ToDo List: </h3>
+					<div class="list-group today">
+					  <a href="#" class="list-group-item active">
+					    <h4 class="list-group-item-heading">CS230</h4>
+				  	    <p class="list-group-item-text">Complete Binary bomb project.</p>
+					  </a>
+						<a href="#" class="list-group-item active">
+						  <h4 class="list-group-item-heading">CS320</h4>
+							 <p class="list-group-item-text">Complete Software Design Document. Make UML and Architecture diagrams.</p>
+						</a>
+						<a href="#" class="list-group-item active">
+			   	    <h4 class="list-group-item-heading">CS240</h4>
+							  <p class="list-group-item-text">Complete Homework4. Finsih all the questions.</p>
+					  </a>
+						<a href="#" class="list-group-item active">
+							<h4 class="list-group-item-heading">Get oil changed for the car</h4>
+							 <p class="list-group-item-text">Bring car to jiff lube. Appointment at 3:40 pm.</p>
+						</a>
+					</div>
+					<div class="btn-group" role="group" aria-label="...">
+  						<button type="button" class="btn btn-default">Add Task</button>
+  						<button type="button" class="btn btn-default">Edit Task</button>
+  					</div>
+		</div>
+	 </div>
+ </div>
+
+
+
+	<script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

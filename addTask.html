@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Task</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="addtask.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Pomodoro</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="home.html">Home</a></li>
+        <li class="active"><a href="#"><span class="sr-only">(current)</span>Task</a></li>
+        <li><a href="#">Activity</a></li>
+        <li><a href="About.html">Settings</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+ </nav>
+ <div class="container">
+ 	<div class="row">
+ 		<div class="col-lg-2"></div>
+ 		<div class="col-lg-8">
+ 		<h2>Add Task</h2>
+ 		<hr>
+ 			<div class="input-group tname">
+  				<input type="text" class="form-control" placeholder="Example: Complete CS320 Homework" aria-describedby="basic-addon2">
+  				<span class="input-group-addon" id="basic-addon2">Task Name</span>
+			</div>
+			<hr>
+			<div class="input-group tdesc">
+  				<input type="text" class="form-control" placeholder="Example: Write the UI design code and look at Django." aria-describedby="basic-addon2">
+  				<span class="input-group-addon" id="basic-addon2">Task Description</span>
+			</div>
+			<hr>
+			<form class="date">		
+		      <div>
+		        <label for="bday">Due Date: </label>
+		        <select name="month">
+		          <option value="Month">Month</option>
+		          <option value="jan">January</option>
+		          <option value="fab">Febraury</option>
+		          <option value="marc">March</option>
+		          <option value="april">April</option>
+		          <option value="may">May</option>
+		          <option value="june">June</option>
+		          <option value="july">July</option>
+		          <option value="august">August</option>
+		          <option value="sept">September</option>
+		          <option value="oct">October</option>
+		          <option value="nov">November</option>
+		          <option value="dec">December</option>
+		      </select>
+
+		      <select name="day">
+		          <option value="day">Day</option>
+		          <option value="1">1</option>
+		          <option value="2">2</option>
+		          <option value="3">3</option>
+		          <option value="4">4</option>
+		          <option value="5">5</option>
+		          <option value="6">6</option>
+		          <option value="7">7</option>
+		          <option value="8">8</option>
+		          <option value="9">9</option>
+		          <option value="10">10</option>
+		          <option value="11">11</option>
+		          <option value="12">12</option>
+		          <option value="13">13</option>
+		          <option value="13">14</option>
+		          <option value="13">15</option>
+		          <option value="13">16</option>
+		          <option value="13">17</option>
+		          <option value="13">18</option>
+		          <option value="13">19</option>
+		          <option value="13">20</option>
+		          <option value="13">21</option>
+		          <option value="13">22</option>
+		          <option value="13">23</option>
+		          <option value="13">24</option>
+		          <option value="13">25</option>
+		          <option value="13">26</option>
+		          <option value="13">27</option>
+		          <option value="13">28</option>
+		          <option value="13">29</option>
+		          <option value="13">30</option>
+		          <option value="13">31</option>
+		      </select>
+
+		      <select name="year">
+		          <option value="year">Year</option>
+		          <option value="1990">2016</option>
+		          <option value="1991">2017</option>
+		          <option value="1992">2018</option>
+		          <option value="1993">2019</option>
+		          <option value="1994">2020</option>
+		          <option value="1995">2021</option>
+		      </select>
+			</form>
+			<label for="priority" class="prioritynum">Priority: </label>
+				<select name="priority">
+					<option value="1">Low Priority</option>
+					<option value="1">Medium Priority</option>
+					<option value="1">High Priority</option>
+					<option value="1">Urgent Priority</option>
+				</select>
+			<hr>
+			<div class="row">
+			<div class="col-lg-6">
+				<h4>Enter number of pomodoros for the task: </h4>
+			</div>
+			<div class="col-lg-6">
+				<input type="text" name="pomodoros" placeholder="" class="input1">
+			</div>
+			</div>
+			<sup>(Each pomodoro is 25 minutes in length and one cycle has 4 pomodoros.)</sup>
+ 	</div>
+ </div>
+
+<script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

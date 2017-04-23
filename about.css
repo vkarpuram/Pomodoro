@@ -1,0 +1,42 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	background: #ffdbaa;
+	padding-top: 70px;
+}
+
+html {
+	height: 100%;
+}
+
+.dropdown {
+	padding-top: 16px;
+}
+
+.row {
+	padding-bottom: 15px;
+}
+
+.navbar-inverse {
+	background: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+hr {
+	border: 1px solid #2c3e50;
+}
+
+.panel-default {
+	width: 300px;
+}
+
+.input-group {
+	width: 40%;
+	padding-top: 15px;
+}
